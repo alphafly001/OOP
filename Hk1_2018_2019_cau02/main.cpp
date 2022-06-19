@@ -7,21 +7,22 @@ class cNgay
 private:
     int ngay, thang , nam ;
 public:
-    cNgay();
+    cNgay()
+    {
+        ngay = 1;
+        thang =  1;
+        nam = 1 ;
+
+    }
     cNgay (int, int);
+
     cNgay (int, int, int);
     friend istream& operator>> (istream& ,cNgay&);
     friend ostream& operator<< (ostream& , const cNgay);
     bool operator< (cNgay);
 
 };
-cNgay::cNgay()
-{
-        ngay = 1;
-        thang =  1;
-        nam = 1 ;
 
-}
 cNgay::cNgay(int x, int y )
 {
     nam = x;
